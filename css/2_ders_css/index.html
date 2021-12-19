@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css learn</title>
+
+    <!-- internal css: o sayfanın tamamında çalışır -->
+    <style>
+
+        h3{
+            font-size:15px
+            
+        }
+        .div_float{
+            color:white;background-color: black;
+            display: inline;
+            margin-right: 25px;
+        }
+    </style>
+    <!-- external css yapısının linkini burada göstermeliyiz -->
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="div_shadow">
+    asd
+</div>
+
+
+
+    <hr>
+
+<a class="click_me" href="http://www.bilgeadam.com"target="_blank">Click me</a>
+
+    <div>
+        <p>div içindeki paragraf</p>
+    </div>
+    
+    <p>1.paragraf</p>
+    <p>2.paragraf</p>
+    <div>2.div</div>
+    <p>alttaki p</p>
+
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+        <li>item 6</li>
+    </ul>
+    <br><br><br><br>
+    <div class="div_float clearfix" style="background-color: brown; float:right">1</div>
+    <div class="div_float clearfix" style="background-color: rgb(rgb(175, 45, 45), rgb(19, 44, 19), blue);float:rileft">2</div>
+    <div class="div_float clearfix">3</div>
+    <br><br><br>
+
+    <p class="text4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nulla veniam quod pariatur unde in delectus, reprehenderit voluptas adipisci corporis similique veritatis dicta vel molestias ratione nihil modi tempore dolor?
+    Cupiditate veniam provident exercitationem. Ratione, veniam, voluptatibus obcaecati placeat quidem nihil saepe corporis exercitationem quam tenetur dolorem ab. Inventore reiciendis quia molestiae debitis voluptas iusto sint eaque esse ad suscipit.
+    Rerum earum necessitatibus consectetur provident odio laudantium iusto accusantium totam iure sequi! Recusandae rerum maiores natus nisi enim maxime, beatae, voluptatibus quisquam accusamus a esse! Beatae harum repellat placeat vero.
+    Sequi inventore distinctio exercitationem sed deserunt facilis saepe, laboriosam nisi dignissimos facere quia aliquam reprehenderit excepturi sunt recusandae natus praesentium molestias possimus provident, beatae voluptate error quidem sapiente? Tempore, hic.</p>
+    <div style="background:red;">
+            <p>1.div. </p>
+    </div>
+    <div>
+        <p>2.div</p>
+    </div>
+
+    <!-- css syntax==> key:value; -->
+    <!-- inline css: sadece o satırda çalışır -->
+   <p style="color:red;font-size: 20px;">Lorem ipsum dolor sit amet.</p>
+
+    <h3>item 1</h3>
+    <h3>item 1</h3>
+    <h3>item 1</h3>
+    
+    <!-- class = public  -->
+    <!-- id = private -->
+    <p class="bilgeadam_clas">external css çalışşsın</p>
+    <p class="bilgeadam_id">external css çalışşsın</p>
+    <p id="unique">farklıyım</p>
+</body>
+</html>
