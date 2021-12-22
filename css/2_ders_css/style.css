@@ -1,4 +1,14 @@
 
+
+
+
+.click_me:link
+{
+    background-color: blue;
+    color: yellow;
+    padding: 25px;
+}
+
 .div_shadow:hover{
     box-shadow: 1px 2px 3px 12px
     rgba(4,5,6,.8);
@@ -47,7 +57,7 @@ div>p{
 }
 /*div  aynı seviye */
 div ~ p{
-    color: blue;
+    color: red;
     font-size: 25px;
 }
 /*div  aynı seviyede ilk p */
@@ -76,7 +86,7 @@ ul li:last-child{
 
 
 
-.clearfix::after{
+.clearfix:after{
     content: "";
     clear:both;
     display: block;
@@ -86,42 +96,36 @@ ul li:last-child{
 
 
 .text4{
-    margin-bottom: 55px;
+    margin-bottom: 35px;
     text-align: justify;
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: lowercase;
     text-indent: 25px;
     text-shadow: 0.1px 0.1px;
-    letter-spacing: 1px;
-    line-height: 15px;
-    word-spacing: 1px;
+    letter-spacing: 0.5px;
+    line-height:20px;
+    word-spacing: 0.2px;
     column-count: 3;
     column-rule: 3px solid red;
 
+    /* h-w */
     display: inline-block;
     
 }
 
-.bilgeadam_class{
-    color:rebeccapurple;
-    font-size: 2rem;
-}
-#bilgeadam_id{
-    color:black;
-    /* !important: zorunlu görev */
-    font-size: 3rem!important;
-}
+
+
 /* renkler 0 (siyah)
-renkelerf (beyaz) */
+renkler f (beyaz) */
 div {
     width: 250px;
-    height: 200px;
-    color: rgba(132, 0, 255, 0.9);
+    height: 250px;
+    color: rgba(20, 7, 32, 0.9);
     background-color: rgba(0, 0, 0, 0.8);
-    padding: 15px 25px 35px 42px;
-    margin-top: 12px;
-    border:6px solid blue;
-    border-radius: 50%;
+    padding: 35px 40px 35px 42px;
+    margin-top: 40px;
+    border-top:8px solid blue ;
+    border-radius: 100%;
 }
 #unique{
     font-size:25px;
@@ -129,4 +133,15 @@ div {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
 }
-/* @Override : */
+/* class */
+.bilgeadam_class{
+    color:red;
+    font-size: 3rem;
+}
+
+/* id */
+#bilgeadam_id{
+    color:black;
+    /* !important: zorunlu görev */
+    font-size: 4rem!important;
+}

@@ -1,0 +1,108 @@
+
+div{
+    height: 200px;
+    display: inline-block
+}
+
+/* msi */
+/* break point : 10<=x<=699 */
+@media (min-width:10px) and (max-width:699px)   {
+    .div1{
+        width: 100%!important;
+    }
+}
+
+@media (min-width:700px) and (max-width:899px)   {
+    .div1{
+        width: 49%;
+    }
+}
+
+@media (min-width:900px) and (max-width:1119px)   {
+    .div1{
+        width: 30%;
+    }
+}
+
+
+@media screen and (min-width:1220px){
+    .div1{
+        width: 24%;
+    }
+}
+
+/* F-A-R-S-S
+F=fixed
+A=absolute 0,0
+R=relative kendini ebevyn göre ayarlıyor.
+S=stick
+S=static(default)
+*/
+
+#paragraf{
+    border:1px solid blueviolet;
+    position: sticky;
+    left: 45px;
+    top:3px;
+    background: white;
+}
+
+#back_to_top{
+width: 60px;
+height: 20px;
+background: red;
+position: fixed;
+right: 3px;
+bottom: 0;
+
+}
+#back_to_top a{
+  color:white;  
+  margin:2px 10%;
+  width: 100%;
+}
+
+
+
+img{
+     max-width: 100%; /*erişebildiğin max. genişlik  */
+    height: auto;
+}
+
+img:hover{
+    box-shadow: 1px 1px 5px 2px rgba(0,0,0,.7);
+    transition:2s all;
+    object-fit: cover; /*kendine göre ayarla daha güzel göster*/
+}
+
+
+
+ul li{
+    list-style-type:none;
+    text-decoration: none;
+}
+
+.box_sizing{
+    background: lightblue;
+    color:black;
+    height:calc(200px);
+    width: 305px;
+    margin-top: 5%;
+    padding: 30px;
+    border:5px solid red;
+    /* width=padding+border+width=350px */
+    /* calc:305+20*2+5*2=355px */
+    box-sizing: border-box;
+    
+    display: inline-block;  
+
+}
+
+.box_sizing:hover{
+    height: 250px;
+    width: 400px; 
+    background: black;
+    color:lightblue;
+    transition: 3s all; 
+}
+
